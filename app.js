@@ -26,20 +26,22 @@ btnCheck.addEventListener("click",function clickHandler(){
         }
         else{
             errLuckyNo.style.display = "none";
+
+            console.log(sum , luckyNumber.value)
+            var remainder = sum % luckyNumber.value;
+            console.log(remainder);
+            if(remainder > 0){
+                noLucky.style.display = "block";
+                lucky.style.display = "none";
+            }else{
+                lucky.style.display = "block";
+                noLucky.style.display = "none";
+            }
         }
     }
 
     
-     console.log(sum , luckyNumber.value)
-     var remainder = sum % luckyNumber.value;
-     console.log(remainder);
-     if(remainder > 0){
-         noLucky.style.display = "block";
-         lucky.style.display = "none";
-     }else{
-         lucky.style.display = "block";
-         noLucky.style.display = "none";
-     }
+     
      sum = 0;
 })
 

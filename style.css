@@ -3,6 +3,8 @@ body {
     margin: auto;
     padding: 2rem;
     min-width: 300px;
+    background: rgb(237, 240, 102);
+    color: rgb(87, 13, 112);
 }
 
 .msg-container {
@@ -15,6 +17,9 @@ body {
     margin: 1rem;
     border: ridge;
     border-radius: 1rem;
+    cursor: pointer;
+    background: rgb(238, 196, 158);
+
 }
 
 input {
@@ -24,10 +29,49 @@ input {
 }
 
 footer {
-    border: double;
+    border: none;
     padding: 2rem 1rem;
+    background: transparent;
+    left: 50%;
+    top: 85%;
 }
 
 .msg {
-    padding: 1rem;
+    margin: -0.8rem;
+}
+
+img {
+    width: 200px;
+    height: 300px;
+}
+
+a{
+    text-decoration: none;
+    padding: 0.5rem 2rem;
+    border-radius: 1rem;
+    color:rgb(5, 8, 37) ;
+    font-style: bold;
+    font-weight: 100;
+}
+a:hover {
+    background-color: rgb(223, 247, 7);
+  }
+
+.notice-class {
+    color: red;
+    border: solid;
+}
+
+#notice {
+    border: none;
+    border-radius: 2rem;
+    background:rgb(238, 196, 158);
+    color: red;
+    font-size: larger;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.err {
+    color: red;
 }
