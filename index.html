@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Is your Birthday is Lucky?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="msg-container">
+        <h1>Is Your Birthday Is Lucky?</h1>
+    </div>
+    <div class="container">
+        <div class="notice-class">
+        <h3><strong>Privacy Notice!</strong> We are not storing your data.<button id="notice">x</button></h3>
+        </div>
+
+        <h2>Enter Your Birthdate and lucky number to continue...</h2>
+
+        <h3>Select your Birthdate</h3>
+
+        <input class="birth" type="date" name="birthdate" id="birthdate" placeholder="dd-mm-yy">
+        <p id="err-birthdate" style="display:none">Please enter valid Birthdate.</p>
+
+        <h3>Enter your lucky no. :</h3>
+        <input class="lucky-no" type="number" id="lucky-number"> <br>
+        <p id="err-lucky-no" style="display:none">Please enter valid Lucky Number.</p>
+        
+        <button class="btn" id="btn-check">check</button>
+
+        <div id="not-lucky-person" style="display:none; ">
+        <h3 class="msg" >Oops!!Your birthday is not a lucky number!</h3>
+        </div>
+
+        <div id="lucky-person" style="display:none">
+        <h3 class="msg" >Hurray!!You are a lucky person!</h3>
+        </div>
+    </div>
+    <footer>
+        <a href="http://">GitHub</a>
+        <a href="http://">LinkdIn</a>
+        <a href="http://">Portfolio</a>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
